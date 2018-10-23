@@ -1,0 +1,20 @@
+<Tables name="Operation">
+	<Table name="EMF_FaultRepair_ImportDetail" description="operation_faultReport_Submit_Table">
+	        <Field name="ID" type="char(36)" length="36" isKey="true" enableNull="false"/>
+		<Field name="Action" type="varchar(255)" length="255" isKey="false" enableNull="false"/>
+		<Field name="OfflineModel" type="char(36)" length="36" isKey="false" enableNull="false"/>
+	        <Field name="FilePath" type="varchar(255)" length="255" isKey="false" enableNull="false"/>
+                <Field name="TaskID" type="char(36)" length="36" isKey="false" enableNull="true"/>
+	</Table>
+	<Table name="EMF_FaultRepair_binary_ImportDetail" description="故障申报二进制缓存表">
+	        <Field name="ID" type="char(36)" length="36" isKey="true" enableNull="false"/>
+		<Field name="Action" type="varchar(255)" length="255" isKey="false" enableNull="false"/>
+		<Field name="OfflineModel" type="char(36)" length="36" isKey="false" enableNull="false"/>
+	        <Field name="SerialKey" type="char(36)" length="36" isKey="false" enableNull="false"/>
+		<Field name="Title" type="text" length="36" isKey="false" enableNull="false"/>
+		<Field name="Name" type="text" length="36" isKey="false" enableNull="false"/>
+		<Field name="Mime" type="char(36)" length="36" isKey="false" enableNull="false"/>
+		<Field name="Description" type="text" length="36" isKey="false" enableNull="false"/>
+	        <Field name="FilePath" type="varchar(255)" length="255" isKey="false" enableNull="false"/>
+	</Table>
+</Tables>

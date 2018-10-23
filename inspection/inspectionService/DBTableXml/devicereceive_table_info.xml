@@ -1,0 +1,54 @@
+<Tables name="DevicesDistribution">
+    <Table name="EMD_Distribute" description="设备领用表">
+        <Field name="ID" type="char(36)" length="36" isKey="true" enableNull="false"/>
+        <Field name="OrderCode" type="varchar(50)" length="50" isKey="false" enableNull="true"/>
+        <Field name="OrderName" type="varchar(255)" length="255" isKey="false" enableNull="true"/>
+        <Field name="OrderOrganiseName" type="varchar(255)" length="255" isKey="false" enableNull="true"/>
+        <Field name="Description" type="text" length="0" isKey="false" enableNull="true"/>
+        <Field name="OperatorUserName" type="varchar(50)" length="0" isKey="false" enableNull="true"/>
+        <Field name="OperatorDate" type="datetime" length="0" isKey="false" enableNull="true"/>
+        <Field name="AuditUserName" type="varchar(50)" length="0" isKey="false" enableNull="true"/>
+        <Field name="AuditDate" type="datetime" length="0" isKey="false" enableNull="true"/>
+        <Field name="OrganiseUnitID" type="char(36)" length="36" isKey="false" enableNull="true"/>
+        <Field name="OrganiseUnitName" type="varchar(255)" length="255" isKey="false" enableNull="true"/>
+        <Field name="DepartMentID" type="char(36)" length="36" isKey="false" enableNull="trues"/>
+        <Field name="DepartMentName" type="varchar(255)" length="255" isKey="false" enableNull="true"/>
+        <Field name="SyncStatus" type="int(11)" length="11" isKey="false" enableNull="true"/>
+        <Field name="TotalEquipments" type="int" length="0" isKey="false" enableNull="true"/>
+        <Field name="ReMark" type="text" length="0" isKey="false" enableNull="true"/>
+        <Field name="ModifiedDate" type="datetime" length="0" isKey="false" enableNull="true"/>
+        <Field name="ServerDate" type="datetime" length="0" isKey="false" enableNull="true"/>
+        <Field name="LocalStatus" type="int(11)" length="11" isKey="false" enableNull="true"/>
+    </Table>
+    <Table name="EMD_DistributeEquipment" description="待领用设备表">
+        <Field name="ID" type="char(36)" length="36" isKey="true" enableNull="false"/>
+        <Field name="DistributeID" type="char(36)" length="36" isKey="false" enableNull="false"/>
+        <Field name="OrderCode" type="varchar(50)" length="50" isKey="false" enableNull="true"/>
+        <Field name="EquipmentID" type="char(36)" length="36" isKey="false" enableNull="false"/>
+        <Field name="ReceiveUserID" type="varchar(36)" length="0" isKey="false" enableNull="true"/>
+        <Field name="ReceiveUserName" type="varchar(50)" length="0" isKey="false" enableNull="true"/>
+        <Field name="ReceiveDate" type="datetime" length="0" isKey="false" enableNull="true"/>
+        <Field name="IsRFIDScan" type="int(11)" length="11" isKey="false" enableNull="true"/>
+        <Field name="IsBarCodeScan" type="int(11)" length="11" isKey="false" enableNull="true"/>
+        <Field name="PDAID" type="varchar(50)" length="50" isKey="false" enableNull="true"/>
+        <Field name="ModifiedDate" type="datetime" length="0" isKey="false" enableNull="true"/>
+        <Field name="LocalStatus" type="int(11)" length="11" isKey="false" enableNull="true"/>
+    </Table>
+    <Table name="EMD_DistributeTaskSyncState" description="任务信息同步控制表">
+        <Field name="UserID" type="varchar(20)" length="20" isKey="false" enableNull="true"/>
+        <Field name="TaskID" type="char(36)" length="36" isKey="false" enableNull="true"/>
+        <Field name="LastTime" type="datetime" length="0" isKey="false" enableNull="true"/>
+    </Table>
+    <Table name="EMD_DistributeSyncState" description="同步控制表">
+        <Field name="UserID" type="varchar(20)" length="20" isKey="false" enableNull="true"/>
+        <Field name="LastTime" type="datetime" length="0" isKey="false" enableNull="true"/>
+    </Table>
+    <Table name="EMD_DistributeSubmit" description="设备领用提交表">
+        <Field name="ID" type="char(36)" length="36" isKey="true" enableNull="false"/>
+        <Field name="Action" type="varchar(255)" length="255" isKey="false" enableNull="false"/>
+        <Field name="OfflineModel" type="char(36)" length="36" isKey="false" enableNull="false"/>
+        <Field name="FilePath" type="varchar(255)" length="255" isKey="false" enableNull="false"/>
+        <Field name="OrderCode" type="char(50)" length="36" isKey="false" enableNull="false"/>
+        <Field name="EquipmentID" type="char(36)" length="36" isKey="false" enableNull="true"/>
+    </Table>
+</Tables>

@@ -1,0 +1,111 @@
+<Tables name="Examine">
+    <Table name="EXAM_ExamineTask" description="规范检查任务表">
+        <Field name="TaskDataKey" enableNull="false" isKey="true" length="50" type="varchar(50)"/>
+        <Field name="TaskCode" enableNull="true" isKey="false" length="36" type="varchar(50)"/>
+        <Field name="TaskName" enableNull="true" isKey="false" length="36" type="varchar(100)"/>
+        <Field name="Descript" enableNull="true" isKey="false" length="256" type="varchar(256)"/>
+        <Field name="EnableUploadAttach" enableNull="true" isKey="false" length="11" type="int(11)"/>
+        <Field name="TaskType" enableNull="true" isKey="false" length="11" type="int(11)"/>
+        <Field name="TaskStartTime" enableNull="true" isKey="false" length="0" type="datetime"/>
+        <Field name="TaskEndTime" enableNull="true" isKey="false" length="0" type="datetime"/>
+        <Field name="TaskRemindTime" enableNull="true" isKey="false" length="0" type="datetime"/>
+        <Field name="TaskStatus" enableNull="true" isKey="false" length="11" type="int(11)"/>
+        <Field name="PlanID" enableNull="true" isKey="false" length="36" type="char(36)"/>
+        <Field name="CompanyID" enableNull="true" isKey="false" length="36" type="varchar(36)"/>
+        <Field name="CompanyName" enableNull="true" isKey="false" length="256" type="varchar(256)"/>
+        <Field name="ModifiedDate" enableNull="true" isKey="false" length="0" type="datetime"/>
+        <Field name="LimitMode" enableNull="true" isKey="false" length="2" type="int(2)"/>
+        <Field name="LocalStatus" enableNull="true" isKey="false" length="11" type="int(11)"/>
+        <Field name="SyncStatus" enableNull="true" isKey="false" length="11" type="int(11)"/>
+        <Field name="IsPreTask" enableNull="true" isKey="false"  length="11" type="int(11)"/>
+        <Field name="ExamObjectType" enableNull="true" isKey="false" length="11" type="int(11)"/>
+        <Field name="CreatedTime" enableNull="true" isKey="false" length="0" type="datetime"/>
+    </Table>
+    <Table name="EXAM_ExamineTaskObject" description="规范检查任务子对象表">
+        <Field name="TaskObjectDataKey" enableNull="false" isKey="true" length="50" type="varchar(50)"/>
+        <Field name="TaskObjectName" enableNull="true" isKey="false" length="50" type="varchar(50)"/>
+        <Field name="TaskDataKey" enableNull="true" isKey="false" length="50" type="varchar(50)"/>
+        <Field name="PostCode" enableNull="true" isKey="false" length="20" type="varchar(20)"/>
+        <Field name="RFIDCode" enableNull="true" isKey="false" length="50" type="varchar(50)"/>
+        <Field name="BarCode" enableNull="true" isKey="false" length="50" type="varchar(50)"/>
+        <Field name="QRCode" enableNull="true" isKey="false" length="50" type="varchar(50)"/>
+        <Field name="ExamObjectType" enableNull="true" isKey="false" length="11" type="int(11)"/>
+        <Field name="RealObjectID" enableNull="true" isKey="false" length="36" type="varchar(36)"/>
+        <Field name="TotalItemCount" enableNull="true" isKey="false" length="0" type="int"/>
+        <Field name="ExamItemCount" enableNull="true" isKey="false" length="11" type="int(11)"/>
+        <Field name="LocalStatus" enableNull="true" isKey="false" length="11" type="int(11)"/>
+    </Table>
+    <Table name="EXAM_ExamineTaskItem" description="规范检查检查项表">
+        <Field name="TaskItemDataKey" enableNull="false" isKey="true" length="50" type="varchar(50)"/>
+        <Field name="ItemName" enableNull="true" isKey="false" length="50" type="varchar(50)"/>
+        <Field name="ItemFullName" enableNull="true" isKey="false" length="512" type="varchar(512)"/>
+        <Field name="ModelItemID" enableNull="true" isKey="false" length="36" type="varchar(36)"/>
+        <Field name="TaskObjectDataKey" enableNull="true" isKey="false" length="50" type="varchar(50)"/>
+        <Field name="RFIDCode" enableNull="true" isKey="false" length="50" type="varchar(50)"/>
+        <Field name="BarCode" enableNull="true" isKey="false" length="50" type="varchar(50)"/>
+        <Field name="QRCode" enableNull="true" isKey="false" length="50" type="varchar(50)"/>
+        <Field name="TaskDataKey" enableNull="true" isKey="false" length="50" type="varchar(50)"/>
+        <Field name="ItemSchema" enableNull="true" isKey="false" length="0" type="text"/>
+        <Field name="SerialKey" enableNull="true" isKey="false" length="50" type="varchar(50)"/>
+        <Field name="ExamStatus" enableNull="true" isKey="false" length="0" type="int"/>
+        <Field name="ModifiedDate" enableNull="true" isKey="false" length="0" type="datetime"/>
+        <Field name="LocalStatus" enableNull="true" isKey="false" length="11" type="int(11)"/>
+    </Table>
+    <Table name="EXAM_ExamineTaskArea" description="规范检查检查点表">
+        <Field name="AreaID" enableNull="false" isKey="true" length="36" type="varchar(36)"/>
+        <Field name="AreaCode" enableNull="true" isKey="false" length="50" type="varchar(50)"/>
+        <Field name="AreaName" enableNull="true" isKey="false" length="50" type="varchar(50)"/>
+        <Field name="Descript" enableNull="true" isKey="false" length="200" type="varchar(200)"/>
+        <Field name="RFIDCode" enableNull="true" isKey="false" length="50" type="varchar(50)"/>
+        <Field name="BarCode" enableNull="true" isKey="false" length="50" type="varchar(50)"/>
+        <Field name="QRCode" enableNull="true" isKey="false" length="50" type="varchar(50)"/>
+        <Field name="CompanyID" enableNull="true" isKey="false" length="36" type="varchar(36)"/>
+        <Field name="CompanyName" enableNull="true" isKey="false" length="256" type="varchar(256)"/>
+        <Field name="DepartmentID" enableNull="true" isKey="false" length="36" type="varchar(36)"/>
+        <Field name="DepartmentName" enableNull="true" isKey="false" length="256" type="varchar(256)"/>
+        <Field name="ModifiedDate" enableNull="true" isKey="false" length="0" type="datetime"/>
+    </Table>
+    <Table name="EXAM_ExamineOrganiseUnit" description="组织机构信息表">
+        <Field name="OrganiseUnitID" enableNull="false" isKey="true" length="36" type="varchar(36)"/>
+        <Field name="OrganiseUnitCode" enableNull="true" isKey="false" length="50" type="varchar(50)"/>
+        <Field name="StandardCode" enableNull="true" isKey="false" length="50" type="varchar(50)"/>
+        <Field name="OrganiseUnitName" enableNull="true" isKey="false" length="256" type="varchar(256)"/>
+        <Field name="ShortName" enableNull="true" isKey="false" length="50" type="varchar(50)"/>
+        <Field name="FullName" enableNull="true" isKey="false" length="0" type="text"/>
+        <Field name="ABName" enableNull="true" isKey="false" length="50" type="varchar(50)"/>
+        <Field name="RFIDCode" enableNull="true" isKey="false" length="50" type="varchar(50)"/>
+        <Field name="BarCode" enableNull="true" isKey="false" length="50" type="varchar(50)"/>
+        <Field name="QRCode" enableNull="true" isKey="false" length="50" type="varchar(50)"/>
+        <Field name="Remark" enableNull="true" isKey="false" length="256" type="varchar(256)"/>
+        <Field name="ModifiedDate" enableNull="true" isKey="false" length="0" type="datetime"/>
+    </Table>
+    <Table name="EXAM_ExamineTextSubmit" description="规范检查提交表">
+        <Field name="ID" enableNull="false" isKey="true" length="50" type="varchar(50)"/>
+        <Field name="Action" type="varchar(255)" length="255" isKey="false" enableNull="false"/>
+        <Field name="OfflineModel" type="char(36)" length="36" isKey="false" enableNull="false"/>
+        <Field name="TaskItemDataKey" enableNull="true" isKey="false" length="50" type="varchar(50)"/>
+        <Field name="TaskObjectDataKey" enableNull="true" isKey="false" length="50" type="varchar(50)"/>
+        <Field name="TaskDataKey" enableNull="true" isKey="fasle" length="50" type="varchar(50)"/>
+        <Field name="FilePath" enableNull="true" isKey="false" length="255" type="varchar(255)"/>
+    </Table>
+    <Table name="EXAM_ExamineBinarySubmit" description="规范检查二进制提交表">
+        <Field name="ID" enableNull="false" isKey="true" length="50" type="varchar(50)"/>
+        <Field name="Action" type="varchar(255)" length="255" isKey="false" enableNull="false"/>
+        <Field name="OfflineModel" type="char(36)" length="36" isKey="false" enableNull="false"/>
+        <Field name="FilePath" enableNull="true" isKey="false" length="50" type="varchar(256)"/>
+        <Field name="Name" enableNull="true" isKey="false" length="50" type="varchar(50)"/>
+        <Field name="Title" enableNull="true" isKey="false" length="50" type="varchar(50)"/>
+        <Field name="Description" enableNull="true" isKey="false" length="255" type="varchar(300)"/>
+        <Field name="Mime" enableNull="true" isKey="false" length="255" type="varchar(300)"/>
+        <Field name="SerialKey" enableNull="true" isKey="false" length="255" type="varchar(100)"/>
+    </Table>
+    <Table name="EXAM_ExamineTaskSyncState" description="任务信息同步控制表">
+        <Field name="UserID" enableNull="true" isKey="false" length="20" type="varchar(20)"/>
+        <Field name="TaskDataKey" enableNull="true" isKey="false" length="36" type="char(36)"/>
+        <Field name="LastTime" enableNull="true" isKey="false" length="0" type="datetime"/>
+    </Table>
+    <Table name="EXAM_ExamineSyncState" description="同步控制表">
+        <Field name="UserID" enableNull="true" isKey="true" length="20" type="varchar(20)"/>
+        <Field name="LastTime" enableNull="true" isKey="false" length="0" type="datetime"/>
+    </Table>
+</Tables>

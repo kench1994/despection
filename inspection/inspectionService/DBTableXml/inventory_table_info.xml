@@ -1,0 +1,66 @@
+<Tables name="Inventory">
+	<Table name="EMI_Inventory_ImportDetail" description="盘点提交表">
+		<Field name="ID" type="char(36)" length="36" isKey="true" enableNull="false"/>
+		<Field name="Action" type="varchar(255)" length="255" isKey="false" enableNull="false"/>
+		<Field name="OfflineModel" type="char(36)" length="36" isKey="false" enableNull="false"/>
+		<Field name="TaskID" type="char(36)" length="36" isKey="false" enableNull="false"/>
+		<Field name="InventoryID" type="char(36)" length="36" isKey="false" enableNull="false"/>
+		<Field name="FilePath" type="varchar(255)" length="255" isKey="false" enableNull="false"/>
+	</Table>
+	<Table name="EMI_Inventory_Binary_ImportDetail" description="盘点二进制提交缓存表">
+		<Field name="ID" type="char(36)" length="36" isKey="true" enableNull="false"/>
+		<Field name="Action" type="varchar(255)" length="255" isKey="false" enableNull="false"/>
+		<Field name="OfflineModel" type="char(36)" length="36" isKey="false" enableNull="false"/>
+		<Field name="SerialKey" type="char(36)" length="36" isKey="false" enableNull="false"/>
+		<Field name="Title" type="text" length="36" isKey="false" enableNull="false"/>
+		<Field name="Name" type="text" length="36" isKey="false" enableNull="false"/>
+		<Field name="Mime" type="char(36)" length="36" isKey="false" enableNull="false"/>
+		<Field name="Description" type="text" length="36" isKey="false" enableNull="false"/>
+		<Field name="FilePath" type="varchar(255)" length="255" isKey="false" enableNull="false"/>
+	</Table>
+	<Table name="EMI_InventoryTask" description="Inventory Task">
+        <Field name="ID" type="char(36)" length="36" isKey="true" enableNull="false"/>
+        <Field name="TaskCode" type="varchar(20)" length="20" isKey="false" enableNull="true"/>
+        <Field name="TaskName" type="varchar(100)" length="100" isKey="false" enableNull="true"/>
+        <Field name="StartDate" type="datetime" length="0" isKey="false" enableNull="true"/>
+        <Field name="EndDate" type="datetime" length="0" isKey="false" enableNull="true"/>
+        <Field name="TaskExplain" type="text" length="0" isKey="false" enableNull="true"/>
+        <Field name="TaskUser" type="varchar(20)" length="20" isKey="false" enableNull="true"/>
+        <Field name="TaskDate" type="datetime" length="0" isKey="false" enableNull="true"/>
+        <Field name="AuditUser" type="varchar(20)" length="20" isKey="false" enableNull="true"/>
+        <Field name="AuditDate" type="datetime" length="0" isKey="false" enableNull="true"/>
+        <Field name="AuditExplain" type="text" length="0" isKey="false" enableNull="true"/>
+        <Field name="LimitMode" type="int2" length="2" isKey="false" enableNull="true"/>
+        <Field name="EnableImage" type="int2" length="2" isKey="false" enableNull="true"/>
+        <Field name="DeviceCount" type="char(20)" length="20" isKey="false" enableNull="true"/>
+        <Field name="Status" type="char(20)" length="20" isKey="false" enableNull="true"/>
+        <Field name="LocalStatus" type="int2" length="2" isKey="false" enableNull="true"/>
+        <Field name="SyncStatus" type="int2" length="2" isKey="false" enableNull="true"/>
+        <Field name="ModifiedDate" type="datetime" length ="0" isKey="false" enableNull="true" />
+        <Field name="ServerDate" type="datetime" length ="0" isKey="false" enableNull="true" />
+	</Table>
+	<Table name="EMI_InventoryEquipment" description="Inventory Equipment Item Table">
+        <Field name="ID" type="char(36)" length="36" isKey="true" enableNull="false"/>
+        <Field name="TaskID" type="char(36)" length="36" isKey="false" enableNull="false"/>
+        <Field name="EquipmentID" type="char(36)" length="36" isKey="false" enableNull="false"/>
+        <Field name="PostCode" type="char(36)" length="36" isKey="false" enableNull="false"/>
+        <Field name="IsSet" type="int2" length="2" isKey="false" enableNull="true"/>
+        <Field name="ModifiedDate" type="datetime" length="0" isKey="false" enableNull="true"/>
+        <Field name="EquipmentModifiedDate" type="datetime" length="0" isKey="false" enableNull="true"/>
+        <Field name="LocalStatus" type="int2" length="2" isKey="false" enableNull="true"/>
+	</Table>
+	<Table name="EMI_InventoryDic" description="Inventory_Dic_Table">
+		<Field name="DicItemCode" type="varchar(255)" length="255" isKey="true" enableNull="false"/>
+		<Field name="Name" type="varchar(255)" length="255" isKey="false" enableNull="false"/>
+	</Table>
+	<Table name="EMI_Inventory_User_Time" description="用户-业务-时间表">
+		<Field name="UserID" type="char(36)" length="36" isKey="true" enableNull="false"/>
+                <Field name="LastTime" type="datetime" length="0" isKey="false" enableNull="true"/>
+	</Table>
+	<Table name="EMI_Inventory_User_Task_Time" description="用户-任务-时间表">
+		<Field name="ID" type="char(36)" length="36" isKey="true" enableNull="false"/>
+		<Field name="UserID" type="char(36)" length="36" isKey="false" enableNull="true"/>
+		<Field name="TaskID" type="char(36)" length="36" isKey="false" enableNull="true"/>
+                <Field name="LastTime" type="datetime" length="0" isKey="false" enableNull="true"/>
+	</Table>
+</Tables>

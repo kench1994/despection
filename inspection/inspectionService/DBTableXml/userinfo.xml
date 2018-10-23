@@ -1,0 +1,63 @@
+<Tables name="Userinfo">
+    <Table name="EMU_UserInfo_ImportDetail" description="用户信息提交表">
+        <Field name="ID" type="char(36)" length="36" isKey="true" enableNull="false"/>
+        <Field name="Action" type="varchar(255)" length="255" isKey="false" enableNull="false"/>
+        <Field name="OfflineModel" type="char(36)" length="36" isKey="false" enableNull="false"/>
+        <Field name="XmlFilePath" type="varchar(255)" length="255" isKey="false" enableNull="false"/>
+    </Table>
+    <Table name="SDMS_User" description="用户表">
+        <Field name="UserID" type="varchar(20)" length="20" isKey="true" enableNull="false"/>
+        <Field name="UserCode" type="varchar(16)" length="16" isKey="false" enableNull="true"/>
+        <Field name="UserName" type="varchar(20)" length="20" isKey="false" enableNull="true"/>
+        <Field name="UserClass" type="integer(11)" length="11" isKey="false" enableNull="true"/>
+        <Field name="Password" type="varchar(50)" length="50" isKey="false" enableNull="true"/>
+        <Field name="PasswordKey" type="varchar(50)" length="50" isKey="false" enableNull="true"/>
+        <Field name="PasswordIV" type="varchar(50)" length="50" isKey="false" enableNull="true"/>
+        <Field name="Status" type="integer(11)" length="11" isKey="false" enableNull="true"/>
+        <Field name="Gender" type="integer(11)" length="11" isKey="false" enableNull="true"/>
+        <Field name="Telephone" type="varchar(20)" length="20" isKey="false" enableNull="true"/>
+        <Field name="Mobile" type="varchar(20)" length="20" isKey="false" enableNull="true"/>
+        <Field name="Email" type="varchar(255)" length="255" isKey="false" enableNull="true"/>
+        <Field name="Age" type="integer(11)" length="11" isKey="false" enableNull="true"/>
+        <Field name="Position" type="varchar(20)" length="20" isKey="false" enableNull="true"/>
+        <Field name="TechnicalPost" type="varchar(50)" length="50" isKey="false" enableNull="true"/>
+        <Field name="RFIDCode" type="varchar(20)" length="20" isKey="false" enableNull="true"/>
+        <Field name="BarCode" type="varchar(20)" length="20" isKey="false" enableNull="true"/>
+        <Field name="QRCode" type="varchar(20)" length="20" isKey="false" enableNull="true"/>
+        <Field name="OrganiseUnitIDs" type="varchar(255)" length="255" isKey="false" enableNull="true"/>
+        <Field name="OrganiseUnitCodes" type="varchar(255)" length="255" isKey="false" enableNull="true"/>
+        <Field name="OrganiseUnitNames" type="varchar(255)" length="255" isKey="false" enableNull="true"/>
+        <Field name="DepartmentIDs" type="varchar(255)" length="255" isKey="false" enableNull="true"/>
+        <Field name="DepartmentCodes" type="varchar(255)" length="255" isKey="false" enableNull="true"/>
+        <Field name="DepartmentNames" type="varchar(255)" length="255" isKey="false" enableNull="true"/>
+        <Field name="RoleIDs" type="varchar(255)" length="255" isKey="false" enableNull="true"/>
+        <Field name="RoleNames" type="varchar(255)" length="255" isKey="false" enableNull="true"/>
+    </Table>
+    <Table name="SDMS_User_Post" description="用户岗位表">
+        <Field name="ID" type="char(36)" length="36" isKey="true" enableNull="false"/>
+        <Field name="UserID" type="varchar(20)" length="20" isKey="false" enableNull="true"/>
+        <Field name="PostCode" type="varchar(20)" length="20" isKey="false" enableNull="true"/>
+    </Table>
+    <Table name="SDMS_Module" description="用户模块表">
+        <Field name="ID" type="char(36)" length="36" isKey="true" enableNull="false"/>
+        <Field name="UserID" type="char(36)" length="36" isKey="false" enableNull="true"/>
+        <Field name="ModuleID" type="char(36)" length="36" isKey="false" enableNull="true"/>
+        <Field name="LevelCode" type="varchar(100)" length="10" isKey="false" enableNull="true"/>
+        <Field name="ModuleName" type="varchar(100)" length="10" isKey="false" enableNull="true"/>
+        <Field name="ShortName" type="varchar(50)" length="50" isKey="false" enableNull="true"/>
+        <Field name="ParentModuleID" type="char(36)" length="36" isKey="false" enableNull="true"/>
+        <Field name="DisplayInNavTree" type="int(11)" length="11" isKey="false" enableNull="true"/>
+    </Table>
+    <Table name="SDMS_Application" description="应用表">
+        <Field name="UserID" type="char(36)" length="36" isKey="true" enableNull="true"/>
+        <Field name="ApplicationID" type="char(36)" length="36" isKey="false" enableNull="true"/>
+        <Field name="ApplicationCode" type="varchar(20)" length="20" isKey="false" enableNull="true"/>
+        <Field name="ApplicationName" type="varchar(50)" length="50" isKey="false" enableNull="true"/>
+        <Field name="Theme" type="varchar(50)" length="50" isKey="false" enableNull="true"/>
+    </Table>
+    <Table name="SDMS_HistoryUser" description="用户模块表">
+        <Field name="UserCode" isKey="true" type="varchar(36)" length="36"  enableNull="false"/>
+        <Field name="Password" isKey="false" type="varchar(50)" length="50"  enableNull="true"/>
+        <Field name="LastLoginDate" isKey="false" type="datetime" length="0"  enableNull="true" />
+    </Table>
+</Tables>

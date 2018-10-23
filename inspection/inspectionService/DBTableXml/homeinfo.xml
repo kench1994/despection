@@ -1,0 +1,14 @@
+<Tables name="Home">
+    <Table name="CMDS_HomeInfo" description="home">
+        <Field name="UserID" type="char(36)" length="36" isKey="true" enableNull="false"/>
+        <Field name="Total" type="int(11)" length="11" isKey="false" enableNull="true"/>
+        <Field name="finish" type="int(11)" length="11" isKey="false" enableNull="true"/>
+    </Table>
+    <Table name="CMDS_ItemCount" description="moduleCount">
+        <Field name="ID" type="char(36)" length="36" isKey="true" enableNull="false"/>
+        <Field name="UserID" type="char(36)" length="36" isKey="false" enableNull="false"/>
+        <Field name="ModuleID" type="char(36)" length="36" isKey="false" enableNull="true"/>
+        <Field name="OperType" type="char(36)" length="36" isKey="false" enableNull="true"/>
+        <Field name="ItemCount" type="int(11)" length="36" isKey="false" enableNull="true"/>
+    </Table>
+</Tables>

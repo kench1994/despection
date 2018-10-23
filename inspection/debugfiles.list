@@ -1,0 +1,22 @@
+%dir /usr/lib/debug
+%dir /usr/lib/debug/usr
+%dir /usr/lib/debug/usr/apps
+%dir /usr/lib/debug/usr/apps/deviceInspection
+%dir /usr/lib/debug/usr/apps/deviceInspection/bin
+%dir /usr/lib/debug/.build-id
+%dir /usr/lib/debug/.build-id/44
+%dir /usr/lib/debug/.build-id/a1
+%dir /usr/lib/debug/.build-id/20
+%dir /usr/lib/debug/.build-id/51
+/usr/lib/debug/usr/apps/deviceInspection/bin/inspectionPushService.debug
+/usr/lib/debug/usr/apps/deviceInspection/bin/appTest.debug
+/usr/lib/debug/usr/apps/deviceInspection/bin/inspectionService.debug
+/usr/lib/debug/usr/apps/deviceInspection/bin/deviceInspection.debug
+/usr/lib/debug/.build-id/44/b9f0b23a9161ef03c6216ead68126e139557d5.debug
+/usr/lib/debug/.build-id/44/b9f0b23a9161ef03c6216ead68126e139557d5
+/usr/lib/debug/.build-id/a1/e54ffdb429de7eff4c94a028b1897c36d774ae.debug
+/usr/lib/debug/.build-id/a1/e54ffdb429de7eff4c94a028b1897c36d774ae
+/usr/lib/debug/.build-id/20/aa27d64cd0c7e88914e95bf3128d23f8e6a72d
+/usr/lib/debug/.build-id/20/aa27d64cd0c7e88914e95bf3128d23f8e6a72d.debug
+/usr/lib/debug/.build-id/51/736527719a2fcdf5e88a2e6d1e54d340c51d1f.debug
+/usr/lib/debug/.build-id/51/736527719a2fcdf5e88a2e6d1e54d340c51d1f

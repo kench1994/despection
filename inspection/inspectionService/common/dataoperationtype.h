@@ -1,0 +1,52 @@
+#ifndef DATAOPERATIONTYPE
+#define DATAOPERATIONTYPE
+/**
+ * @brief The DataOperationType enum : 业务模块
+ */
+enum DataOperationType {
+    BUSINESS_TYPE_UNKOWN,
+    //用户信息类型
+    BUSINESS_TYPE_USER_INFO,
+    //设备
+    BUSINESS_TYPE_DEVICES,
+    //巡检
+    BUSINESS_TYPE_INSPECTION,
+    //日常
+    BUSINESS_TYPE_DAILY,
+    //保养
+    BUSINESS_TYPE_MAINTENANCE,
+    //标准化
+    BUSINESS_TYPE_STANDARDIZATION,
+    //盘点
+    BUSINESS_TYPE_INVENTORY,
+    //运维
+    BUSINESS_TYPE_OPERATION,
+    //设备领用
+    BUSINESS_TYPE_DEVICE_RECEIVE,
+    //设备调拨
+    BUSINESS_TYPE_DEVICE_DEPLOYMENT,
+    //检查整改
+    BUSINESS_TYPE_RECTIFICATION,
+    //消息
+    BUSINESS_TYPE_MESSAGE,
+    //二进制，下载更新
+    BUSINESS_TYPE_UPDATE,
+    //主功能页面
+    BUSINESS_TYPE_HOME,
+    //扫码
+    BUSINESS_TYPE_SCAN,
+    //知识库
+    BUSINESS_TYPE_KNOWLEDGE
+};
+
+enum BusinessMessageType{
+    MESSAGE_UNKOWN,  //未知业务消息类型
+    MESSAGE_SUBMIT_CACHE_ALL, //提交所有缓存
+    MESSAGE_SYNC_STEP_BY_STEP, //
+    MESSAGE_SYNC_ADDTION,  //增量同步
+    MESSAGE_DEVICE_SYNCED, //设备同步
+    MESSAGE_SYNC_ADDTION_FINISHED  //增量同步
+};
+
+#endif // DATAOPERATIONTYPE
+

@@ -1,0 +1,137 @@
+<Tables name="Inspection">
+<Table name="ISM_InspectionTask" description="Inspection Task Table">
+<Field name="TaskDataKey" enableNull="false" isKey="true" length="50" type="varchar(50)"/>
+<Field name="TaskID" enableNull="true" isKey="false" length="50" type="varchar(50)"/>
+<Field name="TaskCode" enableNull="true" isKey="false" length="50" type="varchar(50)"/>
+<Field name="TaskName" enableNull="true" isKey="false" length="50" type="varchar(50)"/>
+<Field name="PlanID" enableNull="true" isKey="false" length="36" type="char(36)"/>
+<Field name="InspectionModule" enableNull="true" isKey="false" length="50" type="char(50)"/>
+<Field name="EnableUploadAttach" enableNull="true" isKey="false" length="2" type="Int2"/>
+<Field name="LimitMode" enableNull="true" isKey="false" length="2" type="int2"/>
+<Field name="InspectionMode" enableNull="true" isKey="false" length="50" type="varchar(50)"/>
+<Field name="PlanStrategy" enableNull="true" isKey="false" length="50" type="varchar(50)"/>
+<Field name="TaskType" enableNull="true" isKey="false" length="2" type="int2"/>
+<Field name="TaskMode" enableNull="true" isKey="false" length="2" type="int2"/>
+<Field name="TaskStartTime" enableNull="true" isKey="false" length="0" type="datetime"/>
+<Field name="TaskEndTime" enableNull="true" isKey="false" length="0" type="datetime"/>
+<Field name="AuditStatus" enableNull="true" isKey="false" length="2" type="int2"/>
+<Field name="TaskStatus" enableNull="true" isKey="false" length="2" type="int2"/>
+<Field name="HandleStatus" enableNull="true" isKey="false" length="2" type="int2"/>
+<Field name="Operator" enableNull="true" isKey="false" length="20" type="varchar(20)"/>
+<Field name="CompanyID" enableNull="true" isKey="false" length="36" type="varchar(36)"/>
+<Field name="CreatedBy" enableNull="true" isKey="false" length="20" type="varchar(20)"/>
+<Field name="CreatedDate" enableNull="true" isKey="false" length="0" type="datetime"/>
+<Field name="ModifiedBy" enableNull="true" isKey="false" length="20" type="varchar(20)"/>
+<Field name="LocalStatus" enableNull="true" isKey="false" length="2" type="int2"/>
+<Field name="SyncStatus" enableNull="true" isKey="false" length="2" type="int2"/>
+<Field name="ModifiedDate" enableNull="true" isKey="false" length="0" type="datetime"/>
+<Field name="ServerDate" enableNull="true" isKey="false" length="0" type="datetime"/>
+<Field name="IsPreTask" enableNull="true" isKey="false" length="2" type="int2"/>
+<Field name="CreatedTime" enableNull="true" isKey="false" length="0" type="datetime"/>
+</Table>
+
+<Table name="ISM_InspectionTaskGroup" description="Inspection Task Group Table">
+<Field name="TaskGroupDataKey" enableNull="false" isKey="true" length="50" type="varchar(50)"/>
+<Field name="TaskDataKey" enableNull="true" isKey="false" length="50" type="varchar(50)"/>
+<Field name="TaskCode" enableNull="true" isKey="false" length="50" type="varchar(50)"/>
+<Field name="RFIDCode" enableNull="true" isKey="false" length="50" type="varchar(50)"/>
+<Field name="BarCode" enableNull="true" isKey="false" length="50" type="varchar(50)"/>
+<Field name="QRCode" enableNull="true" isKey="false" length="50" type="varchar(50)"/>
+<Field name="TaskGroupName" enableNull="true" isKey="false" length="50" type="varchar(50)"/>
+<Field name="PlanGroupID" enableNull="true" isKey="false" length="36" type="char(36)"/>
+<Field name="ProjectGroupID" enableNull="true" isKey="false" length="36" type="char(36)"/>
+<Field name="AreaID" enableNull="true" isKey="false" length="36" type="char(36)"/>
+<Field name="ObjectTypeCode" enableNull="true" isKey="false" length="50" type="varchar(50)"/>
+<Field name="InspectionModule" enableNull="true" isKey="false" length="50" type="char(50)"/>
+<Field name="RealObjectID" enableNull="true" isKey="false" length="36" type="char(36)"/>
+<Field name="ModelItemID" enableNull="true" isKey="false" length="36" type="char(36)"/>
+<Field name="PostID" enableNull="true" isKey="false" length="36" type="char(36)"/>
+<Field name="PostCode" enableNull="false" isKey="false" length="20" type="varchar(20)"/>
+<Field name="TotalObjectCount" enableNull="true" isKey="false" length="11" type="int(11)"/>
+<Field name="ExamObjectCount" enableNull="true" isKey="false" length="11" type="int(11)"/>
+<Field name="NormalObjectCount" enableNull="true" isKey="false" length="11" type="int(11)"/>
+<Field name="TotalIndicatorCount" enableNull="true" isKey="false" length="11" type="int(11)"/>
+<Field name="ExamIndicatorCount" enableNull="true" isKey="false" length="11" type="int(11)"/>
+<Field name="NormalIndicatorCount" enableNull="true" isKey="false" length="11" type="int(11)"/>
+<Field name="CompanyID" enableNull="true" isKey="false" length="36" type="char(36)"/>
+<Field name="OrderIndex" enableNull="true" isKey="false" length="11" type="int(11)"/>
+<Field name="CreatedBy" enableNull="true" isKey="false" length="20" type="varchar(20)"/>
+<Field name="CreatedDate" enableNull="true" isKey="false" length="0" type="datetime"/>
+<Field name="ServerDate" enableNull="true" isKey="false" length="0" type="datetime"/>
+<Field name="LocalStatus" enableNull="true" isKey="false" length="2" type="int2"/>
+</Table>
+<Table name="ISM_InspectionTaskObject" description="Inspection Task Object Table">
+<Field name="TaskObjectDataKey" enableNull="false" isKey="true" length="36" type="char(36)"/>
+<Field name="ObjectName" enableNull="true" isKey="false" length="50" type="varchar(50)"/>
+<Field name="ObjectFullName" enableNull="true" isKey="false" length="500" type="varchar(500)"/>
+<Field name="ModelItemID" enableNull="true" isKey="false" length="36" type="char(36)"/>
+<Field name="TaskGroupDataKey" enableNull="true" isKey="false" length="50" type="varchar(50)"/>
+<Field name="TaskDataKey" enableNull="true" isKey="false" length="50" type="varchar(50)"/>
+<Field name="RealObjectType" enableNull="true" isKey="false" length="11" type="int(11)"/>
+<Field name="ObjectTypeCode" enableNull="true" isKey="false" length="50" type="varchar(50)"/>
+<Field name="InspectionModule" enableNull="true" isKey="false" length="50" type="char(50)"/>
+<Field name="RealObjectID" enableNull="true" isKey="false" length="36" type="char(36)"/>
+<Field name="IsDelegate" enableNull="true" isKey="false" length="11" type="int(11)"/>
+<Field name="ItemSchema" enableNull="true" isKey="false" length="0" type="text"/>
+<Field name="ItemData" enableNull="true" isKey="false" length="0" type="text"/>
+<Field name="SerialKey" enableNull="true" isKey="false" length="50" type="char(50)"/>
+<Field name="IndicatorFormula" enableNull="true" isKey="false" length="1000" type="varchar(1000)"/>
+<Field name="ScoreScale" enableNull="true" isKey="false" length="0" type="decimal(20,2)"/>
+<Field name="Score" enableNull="true" isKey="false" length="0" type="decimal(20,2)"/>
+<Field name="ModelName" enableNull="true" isKey="false" length="50" type="varchar(50)"/>
+<Field name="Positions" enableNull="true" isKey="false" length="50" type="varchar(50)"/>
+<Field name="ObjectStatus" enableNull="true" isKey="false" length="11" type="int(11)"/>
+<Field name="RFIDCode" enableNull="true" isKey="false" length="50" type="varchar(50)"/>
+<Field name="BarCode" enableNull="true" isKey="false" length="50" type="varchar(50)"/>
+<Field name="QRCode" enableNull="true" isKey="false" length="50" type="varchar(50)"/>
+<Field name="PDAID" enableNull="true" isKey="false" length="50" type="char(50)"/>
+<Field name="IsRFIDScan" enableNull="true" isKey="false" length="11" type="int(11)"/>
+<Field name="IsBarCodeScan" enableNull="true" isKey="false" length="11" type="int(11)"/>
+<Field name="TotalIndicatorCount" enableNull="true" isKey="false" length="11" type="int(11)"/>
+<Field name="NormalIndicatorCount" enableNull="true" isKey="false" length="11" type="int(11)"/>
+<Field name="IsNormal" enableNull="true" isKey="false" length="11" type="int(11)"/>
+<Field name="InspectStatus" enableNull="true" isKey="false" length="11" type="int(11)"/>
+<Field name="InspectUser" enableNull="true" isKey="false" length="50" type="varchar(50)"/>
+<Field name="InspectTime" enableNull="true" isKey="false" length="0" type="datetime"/>
+<Field name="IsReprocessed" enableNull="true" isKey="false" length="11" type="int(11)"/>
+<Field name="CompanyID" enableNull="true" isKey="false" length="20" type="varchar(20)"/>
+<Field name="OrderIndex" enableNull="true" isKey="false" length="11" type="int(11)"/>
+<Field name="CreatedBy" enableNull="true" isKey="false" length="20" type="varchar(20)"/>
+<Field name="CreatedDate" enableNull="true" isKey="false" length="0" type="datetime"/>
+<Field name="ModifiedBy" enableNull="true" isKey="false" length="20" type="varchar(20)"/>
+<Field name="ModifiedDate" enableNull="true" isKey="false" length="0" type="datetime"/>
+<Field name="RealObjectModifiedDate" enableNull="true" isKey="false" length="0" type="datetime"/>
+<Field name="DeviceLastModifiedDate" enableNull="true" isKey="false" length="0" type="datetime"/>
+<Field name="ServerDate" enableNull="true" isKey="false" length="0" type="datetime"/>
+<Field name="LocalStatus" type="int2" length="2" isKey="false" enableNull="true"/>
+</Table>
+<Table name="ISM_Inspection_Time" description="用户巡检任务业务时间表">
+<Field name="UserID" enableNull="false" isKey="true" length="36" type="varchar(36)"/>
+<Field name="LastTime" enableNull="true" isKey="false" length="0" type="datetime"/>
+</Table>
+<Table name="ISM_Inspection_Task_Time" description="用户巡检任务时间表">
+<Field name="ID" enableNull="false" isKey="true" length="36" type="varchar(36)"/>
+<Field name="UserID" enableNull="false" isKey="false" length="36" type="varchar(36)"/>
+<Field name="TaskDataKey" enableNull="false" isKey="false" length="36" type="char(36)"/>
+<Field name="LastTime" enableNull="true" isKey="false" length="0" type="datetime"/>
+</Table>
+<Table name="ISM_Inspection_ImportDetail" description="巡检提交表">
+<Field name="ID" type="char(36)" length="36" isKey="true" enableNull="false"/>
+<Field name="Action" type="varchar(255)" length="255" isKey="false" enableNull="false"/>
+<Field name="TaskObjectDataKey"type="char(36)"  length="36" isKey="false" enableNull="true"   />
+<Field name="OfflineModel" type="char(36)" length="36" isKey="false" enableNull="false"/>
+<Field name="TaskType" type="int2" length="2" isKey="false" enableNull="false"/>
+<Field name="FilePath" type="varchar(255)" length="255" isKey="false" enableNull="false"/>
+</Table>
+<Table name="ISM_Inspection_Binary_ImportDetail" description="巡检二进制提交缓存表">
+<Field name="ID" type="char(36)" length="36" isKey="true" enableNull="false"/>
+<Field name="Action" type="varchar(255)" length="255" isKey="false" enableNull="false"/>
+<Field name="OfflineModel" type="char(36)" length="36" isKey="false" enableNull="false"/>
+<Field name="SerialKey" type="char(36)" length="36" isKey="false" enableNull="false"/>
+<Field name="Title" type="text" length="36" isKey="false" enableNull="false"/>
+<Field name="Name" type="text" length="36" isKey="false" enableNull="false"/>
+<Field name="Mime" type="char(36)" length="36" isKey="false" enableNull="false"/>
+<Field name="Description" type="text" length="36" isKey="false" enableNull="false"/>
+<Field name="FilePath" type="varchar(255)" length="255" isKey="false" enableNull="false"/>
+</Table>
+</Tables>

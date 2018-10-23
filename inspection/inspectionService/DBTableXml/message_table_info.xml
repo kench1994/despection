@@ -1,0 +1,24 @@
+<Tables name="MessageInfo">
+	<Table name="Message_Token_Update" description="Token更新表">
+		<Field name="ID" type="char(36)" length="36" isKey="true" enableNull="false"/>
+		<Field name="Action" type="varchar(255)" length="255" isKey="false" enableNull="true"/>
+		<Field name="OfflineModel" type="char(36)" length="36" isKey="false" enableNull="false"/>
+               　<Field name="FilePath" type="varchar(255)" length="255" isKey="false" enableNull="true"/>
+	</Table>
+	<Table name="Message_Info" description="Token更新表">
+		<Field name="MessageID" type="char(36)" length="36" isKey="true" enableNull="false"/>
+		<Field name="OperCode" type="varchar(50)" length="50" isKey="false" enableNull="false"/>
+		<Field name="Title" type="text" length="0" isKey="false" enableNull="true"/>
+		<Field name="Content" type="text" length="0" isKey="false" enableNull="true"/>
+		<Field name="MessageType" type="varchar(30)" length="30" isKey="false" enableNull="true"/>
+		<Field name="MessageTopic" type="varchar(30)" length="30" isKey="false" enableNull="true"/>
+		<Field name="OperType" type="varchar(30)" length="30" isKey="false" enableNull="true"/>
+		<Field name="Extra" type="varchar(256)" length="256" isKey="false" enableNull="true"/>
+		<Field name="FromUserAccount" type="varchar(20)" length="20" isKey="false" enableNull="true"/>
+		<Field name="ToUserAccount" type="varchar(20)" length="20" isKey="false" enableNull="true"/>
+		<Field name="AttachUsers" type="varchar(20)" length="20" isKey="false" enableNull="true"/>
+		<Field name="PublishDate" type="datetime" length="0" isKey="false" enableNull="true"/>
+		<Field name="AppId" type="varchar(36)" length="36" isKey="false" enableNull="true"/>
+		<Field name="ReadStatus" type="int(11)" length="11" isKey="false" enableNull="true"/>
+	</Table>
+</Tables>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sopconfig xmlns:syberos="http://schemas.syberos.com/sop/res/syberos/v1"
+          syberos:sopid="com.syberos.deviceInspection"
+          syberos:versionCode="1"
+          syberos:versionName="1.1.0">
+
+        <uses-permission syberos:name="syberos.permission.ADMIN_PACKAGES"/>
+        <uses-permission syberos:name="syberos.permission.NOTIFICATION"/>
+        <uses-permission syberos:name="syberos.permission.ACCESS_FLASHLIGHT"/>
+        <uses-permission syberos:name="syberos.permission.ACCESS_CAMERA"/>
+        <uses-permission syberos:name="syberos.permission.RECORD"/>
+        <uses-permission syberos:name="syberos.permission.ACCESS_STORAGE"/>
+        <uses-permission syberos:name="syberos.permission.ACCESS_WAKELOCK"/>
+        <uses-permission syberos:name="syberos.permission.READ_IMEI"/>
+        <uses-permission syberos:name="syberos.permission.READ_NETWORK_STATE"/>
+        <uses-permission syberos:name="syberos.permission.ADMIN_DATA_NETWORK"/>
+        <uses-permission syberos:name="syberos.permission.ACCESS_WIFI"/>
+        <uses-permission syberos:name="syberos.permission.ACCESS_DATA_NETWORK"/>
+        <uses-permission syberos:name="syberos.permission.ADMIN_WIFI"/>
+        <uses-permission syberos:name="syberos.permission.DEVICE_SHUTDOWN"/>
+        <uses-permission syberos:name="syberos.permission.ACCESS_NOTIFICATION"/>
+        <uses-permission syberos:name="syberos.permission.ACCESS_ALARM"/>
+        <uses-permission syberos:name="syberos.permission.READ_FINE_LOCATION"/>
+
+        <uses-sdk />
+
+        <application syberos:debuggable="true"
+                     syberos:description="device Inspetion"
+                     syberos:icon="res/deviceInspection.png"
+                     syberos:name="设备巡检">
+                <uiapp syberos:id= "com.syberos.simpleappui"
+                       syberos:exec="bin/deviceInspection"
+                       syberos:splash="res/appsplash.jpg"
+                       syberos:icon="res/deviceInspection.png"
+                       syberos:name="设备巡检"
+                       syberos:background="continue">
+                       <receiver>
+                            <event>BOOT_COMPLETE</event>
+                       </receiver>
+                </uiapp>
+        </application>
+</sopconfig>

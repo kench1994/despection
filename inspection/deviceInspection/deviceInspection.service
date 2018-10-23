@@ -1,0 +1,14 @@
+[Unit]
+Description=Home Screen
+After=pre-user-session.target system-main.service
+Requires=dbus.socket pre-user-session.target system-main.service
+
+[Service]
+User=system
+ExecStart=/usr/apps/deviceInspection/bin/deviceInspection
+Restart=always
+RestartSec=3s
+OOMScoreAdjust=-900
+
+[Install]
+WantedBy=user-session.target

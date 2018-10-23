@@ -1,0 +1,65 @@
+<Tables name="DeviceDeployment">
+    <Table name="EMA_Allocation_Time" description="用户调拨业务时间表">
+        <Field name="UserID" type="varchar(20)" length="20" isKey="true" enableNull="false"/>
+        <Field name="LastTime" type="datetime" length="0" isKey="false" enableNull="false"/>
+    </Table>
+    <Table name="EMA_Allocation_Task_Time" description="用户调拨任务时间表">
+        <Field name="ID" type="varchar(20)" length="20" isKey="true" enableNull="false"/>
+        <Field name="UserID" type="varchar(20)" length="20" isKey="false" enableNull="false"/>
+        <Field name="TaskID" type="char(36)" length="36" isKey="false" enableNull="false"/>
+        <Field name="LastTime" type="datetime" length="0" isKey="false" enableNull="false"/>
+    </Table>
+    <Table name="EMA_Allocation_Task" description="设备调拨表">
+        <Field name="ID" type="char(36)" length="36" isKey="true" enableNull="false"/>
+        <Field name="OrderCode" type="varchar(50)" length="50" isKey="false" enableNull="true"/>
+        <Field name="OrderName" type="varchar(255)" length="255" isKey="false" enableNull="true"/>
+        <Field name="Description" type="text" length="0" isKey="false" enableNull="true"/>
+        <Field name="PlanOrganiseUnit" type="char(36)" length="36" isKey="false" enableNull="true"/>
+        <Field name="PlanOrganiseUnitName" type="varchar(50)" length="50" isKey="false" enableNull="true"/>
+        <Field name="OutOrganiseUnit" type="char(36)" length="36" isKey="false" enableNull="true"/>
+        <Field name="OutOrganiseUnitName" type="varchar(50)" length="50" isKey="false" enableNull="true"/>
+        <Field name="OutDepartMent" type="char(36)" length="36" isKey="false" enableNull="true"/>
+        <Field name="OutDepartMentName" type="varchar(50)" length="50" isKey="false" enableNull="true"/>
+        <Field name="InOrganiseUnit" type="char(36)" length="36" isKey="false" enableNull="true"/>
+        <Field name="InOrganiseUnitName" type="varchar(50)" length="50" isKey="false" enableNull="true"/>
+        <Field name="InDepartMent" type="char(36)" length="36" isKey="false" enableNull="true"/>
+        <Field name="InDepartMentName" type="varchar(50)" length="50" isKey="false" enableNull="true"/>
+        <Field name="PlanDate" type="date" length="0" isKey="false" enableNull="true"/>
+        <Field name="OperatorUser" type="varchar(20)" length="20" isKey="false" enableNull="true"/>
+        <Field name="OperatorDate" type="date" length="0" isKey="false" enableNull="true"/>
+        <Field name="AuditUser" type="varchar(20)" length="20" isKey="false" enableNull="true"/>
+        <Field name="AuditDate" type="date" length="0" isKey="false" enableNull="true"/>
+        <Field name="AuditReMark" type="text" length="0" isKey="false" enableNull="true"/>
+        <Field name="AuditRecord" type="longtext" length="0" isKey="false" enableNull="true"/>
+        <Field name="OutReMark" type="text" length="0" isKey="false" enableNull="true"/>
+        <Field name="OutUser" type="varchar(20)" length="20" isKey="false" enableNull="true"/>
+        <Field name="OutRecordTime" type="datetime" length="0" isKey="false" enableNull="true"/>
+        <Field name="InReMark" type="text" length="0" isKey="false" enableNull="true"/>
+        <Field name="InUser" type="varchar(20)" length="20" isKey="false" enableNull="true"/>
+        <Field name="InRecordTime" type="datetime" length="0" isKey="false" enableNull="true"/>
+        <Field name="Status" type="int(11)" length="11" isKey="false" enableNull="true"/>
+        <Field name="LocalStatus" type="int(11)" length="11" isKey="false" enableNull="true"/>
+        <Field name="SyncStatus" type="int(11)" length="11" isKey="false" enableNull="true"/>
+        <Field name="ModifiedDate" type="datetime" length="0" isKey="false" enableNull="true"/>
+        <Field name="ServerDate" type="datetime" length="0" isKey="false" enableNull="true"/>
+    </Table>
+    <Table name="EMA_Allocation_Equipment" description="调拨设备列表">
+        <Field name="ID" type="char(36)" length="36" isKey="true" enableNull="false"/>
+        <Field name="AllocationID" type="char(36)" length="36" isKey="false" enableNull="false"/>
+        <Field name="OrderCode" type="varchar(50)" length="50" isKey="false" enableNull="true"/>
+        <Field name="EquipmentID" type="char(36)" length="36" isKey="false" enableNull="false"/>
+        <Field name="EquipmentCode" type="varchar(20)" length="20" isKey="false" enableNull="true"/>
+        <Field name="EquipmentName" type="varchar(255)" length="255" isKey="false" enableNull="true"/>
+        <Field name="ManufacturerName" type="varchar(50)" length="50" isKey="false" enableNull="true"/>
+        <Field name="ModelName" type="varchar(50)" length="50" isKey="false" enableNull="true"/>
+        <Field name="EquipmentModifiedDate" type="datetime" length="0" isKey="false" enableNull="true"/>
+    </Table>
+    <Table name="EMA_Allocation_Submit" description="设备调拨提交缓存表">
+        <Field name="ID" type="char(36)" length="36" isKey="true" enableNull="false"/>
+        <Field name="OrderCode" type="varchar(50)" length="50" isKey="false" enableNull="true"/>
+        <Field name="Action" type="varchar(255)" length="255" isKey="false" enableNull="false"/>
+        <Field name="OfflineModel" type="char(36)" length="36" isKey="false" enableNull="false"/>
+        <Field name="XmlFilePath" type="varchar(255)" length="255" isKey="false" enableNull="false"/>
+        <Field name="Status" type="char(10)" length="10" isKey="false" enableNull="true"/>
+    </Table>
+</Tables>

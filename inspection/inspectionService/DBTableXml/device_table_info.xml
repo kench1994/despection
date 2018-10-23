@@ -1,0 +1,91 @@
+<Tables name="Device">
+        <Table name="EMB_Attach_Submit" description="设备附件提交表">
+            <Field name="ID" enableNull="false" isKey="true" length="50" type="varchar(50)"/>
+            <Field name="Action" type="varchar(255)" length="255" isKey="false" enableNull="false"/>
+            <Field name="OfflineModel" type="char(36)" length="36" isKey="false" enableNull="false"/>
+            <Field name="FilePath" enableNull="true" isKey="false" length="50" type="varchar(256)"/>
+            <Field name="Name" enableNull="true" isKey="false" length="50" type="varchar(50)"/>
+            <Field name="Title" enableNull="true" isKey="false" length="50" type="varchar(50)"/>
+            <Field name="Description" enableNull="true" isKey="false" length="255" type="varchar(300)"/>
+            <Field name="Mime" enableNull="true" isKey="false" length="255" type="varchar(300)"/>
+            <Field name="SerialKey" enableNull="true" isKey="false" length="255" type="varchar(100)"/>
+        </Table>
+        <Table name="EMB_Submit" description="设备提交缓存表">
+            <Field name="ID" type="char(36)" length="36" isKey="true" enableNull="false"/>
+            <Field name="Action" type="varchar(255)" length="255" isKey="false" enableNull="false"/>
+            <Field name="OfflineModel" type="char(36)" length="36" isKey="false" enableNull="false"/>
+            <Field name="FilePath" type="varchar(255)" length="255" isKey="false" enableNull="false"/>
+        </Table>
+        <Table name="EMB_Equipment" description="设备档案表">
+		<Field name="ID" type="char(36)" length="36" isKey="true" enableNull="false"/>
+		<Field name="EquipmentCode" type="varchar(20)" length="20" isKey="false" enableNull="true"/>
+		<Field name="EquipmentName" type="varchar(255)" length="255" isKey="false" enableNull="true"/>
+		<Field name="ShortName" type="varchar(50)" length="50" isKey="false" enableNull="true"/>
+		<Field name="EquipmentClassID" type="char(36)" length="36" isKey="false" enableNull="true"/>
+		<Field name="EquipmentClassName" type="varchar(50)" length="50" isKey="false" enableNull="true"/>
+		<Field name="PurposeClassID" type="char(36)" length="36" isKey="false" enableNull="true"/>
+		<Field name="PurposeClassName" type="varchar(50)" length="50" isKey="false" enableNull="true"/>
+		<Field name="ManufacturerID" type="char(36)" length="36" isKey="false" enableNull="true"/>
+		<Field name="ManufacturerName" type="varchar(50)" length="50" isKey="false" enableNull="true"/>
+		<Field name="SupplierID" type="char(36)" length="36" isKey="false" enableNull="true"/>
+		<Field name="SupplierName" type="varchar(50)" length="50" isKey="false" enableNull="true"/>
+		<Field name="MaintenanceID" type="char(36)" length="36" isKey="false" enableNull="true"/>
+		<Field name="MaintenanceName" type="varchar(50)" length="50" isKey="false" enableNull="true"/>
+		<Field name="EquipmentSeries" type="varchar(50)" length="50" isKey="false" enableNull="true"/>
+		<Field name="EquipmentModelID" type="char(36)" length="36" isKey="false" enableNull="true"/>
+		<Field name="EquipmentModelName" type="varchar(50)" length="50" isKey="false" enableNull="true"/>
+		<Field name="Standard" type="varchar(50)" length="50" isKey="false" enableNull="true"/>
+		<Field name="RFIDCode" type="varchar(50)" length="50" isKey="false" enableNull="true"/>
+		<Field name="BarCode" type="varchar(50)" length="50" isKey="false" enableNull="true"/>
+		<Field name="QRCode" type="varchar(50)" length="50" isKey="false" enableNull="true"/>
+		<Field name="SN" type="varchar(50)" length="50" isKey="false" enableNull="true"/>
+		<Field name="PlaceOrigin" type="varchar(50)" length="50" isKey="false" enableNull="true"/>
+		<Field name="EquipmentImage" type="longblob" length="0" isKey="false" enableNull="true"/>
+		<Field name="PurchaseMode" type="varchar(50)" length="50" isKey="false" enableNull="true"/>
+		<Field name="BuyDate" type="date" length="0" isKey="false" enableNull="true"/>
+		<Field name="AgeLimit" type="integer(11)" length="11" isKey="false" enableNull="true"/>
+		<Field name="GuaranteeDate" type="date" length="0" isKey="false" enableNull="true"/>
+		<Field name="Positions" type="varchar(255)" length="255" isKey="false" enableNull="true"/>
+		<Field name="Cost" type="decimal(19,4)" length="0" isKey="false" enableNull="true"/>
+		<Field name="EquipmentStatus" type="varchar(50)" length="50" isKey="false" enableNull="true"/>
+		<Field name="Resume" type="text" length="0" isKey="false" enableNull="true"/>
+		<Field name="Custodian" type="varchar(20)" length="20" isKey="false" enableNull="true"/>
+		<Field name="Recipient" type="varchar(20)" length="20" isKey="false" enableNull="true"/>
+		<Field name="Longitude" type="decimal(22,17)" length="0" isKey="false" enableNull="true"/>
+		<Field name="Latitude" type="decimal(22,17)" length="0" isKey="false" enableNull="true"/>
+		<Field name="ParentEquipmentId" type="char(36)" length="36" isKey="false" enableNull="true"/>
+		<Field name="EAMCode" type="varchar(50)" length="50" isKey="false" enableNull="true"/>
+		<Field name="ERPCode" type="varchar(50)" length="50" isKey="false" enableNull="true"/>
+		<Field name="OtherCode" type="varchar(50)" length="50" isKey="false" enableNull="true"/>
+		<Field name="EquipmentType" type="varchar(50)" length="50" isKey="false" enableNull="true"/>
+		<Field name="EquipmentSystem" type="varchar(50)" length="50" isKey="false" enableNull="true"/>
+		<Field name="EquipmentPart" type="varchar(50)" length="50" isKey="false" enableNull="true"/>
+		<Field name="EquipmentKind" type="varchar(50)" length="50" isKey="false" enableNull="true"/>
+		<Field name="InnerType" type="integer(11)" length="11" isKey="false" enableNull="true"/>
+		<Field name="SerialKey" type="varchar(50)" length="50" isKey="false" enableNull="true"/>
+		<Field name="IsDelete" type="integer(6)" length="6" isKey="false" enableNull="true"/>
+		<Field name="OrganiseUnitID" type="char(36)" length="36" isKey="false" enableNull="true"/>
+		<Field name="OrganiseUnitName" type="varchar(50)" length="50" isKey="false" enableNull="true"/>
+		<Field name="DepartMentID" type="char(36)" length="36" isKey="false" enableNull="true"/>
+		<Field name="Detaile" type="text" length="0" isKey="false" enableNull="true"/>
+		<Field name="ModifiedDate" type="datetime" length="0" isKey="false" enableNull="true"/>
+		<Field name="ModelID" type="char(36)" length="36" isKey="false" enableNull="true"/>
+		<Field name="ModelName" type="varchar(50)" length="50" isKey="false" enableNull="true"/>
+		<Field name="ClassName" type="varchar(50)" length="50" isKey="false" enableNull="true"/>
+		<Field name="SyncStatus" type="integer(6)" length="6" isKey="false" enableNull="true"/>
+	</Table>
+	<Table name="EMB_Equipment_Part" description="设备部件表">
+		<Field name="ID" type="char(36)" length="36" isKey="true" enableNull="false"/>
+		<Field name="EquipmentID" type="char(36)" length="36" isKey="false" enableNull="true"/>
+		<Field name="EquipmentCode" type="varchar(20)" length="20" isKey="false" enableNull="true"/>
+		<Field name="EquipmentName" type="varchar(255)" length="255" isKey="false" enableNull="true"/>
+		<Field name="PartCode" type="varchar(50)" length="50" isKey="false" enableNull="true"/>
+		<Field name="PartName" type="varchar(50)" length="50" isKey="false" enableNull="true"/>
+		<Field name="PartModel" type="varchar(50)" length="50" isKey="false" enableNull="true"/>
+		<Field name="PartEnterprise" type="varchar(50)" length="50" isKey="false" enableNull="true"/>
+		<Field name="RFIDCode" type="varchar(50)" length="50" isKey="false" enableNull="true"/>
+		<Field name="BarCode" type="varchar(50)" length="50" isKey="false" enableNull="true"/>
+		<Field name="QRCode" type="varchar(255)" length="255" isKey="false" enableNull="true"/>
+		<Field name="ModifiedDate" type="datetime" length="0" isKey="false" enableNull="true"/>
+	</Table>
+</Tables>

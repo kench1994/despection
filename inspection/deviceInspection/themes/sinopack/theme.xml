@@ -1,0 +1,29 @@
+<sinopack Style="SyberOS" NameCN="中国石化1" NameEN="CNPC1" Image="">
+<Messages Index="0" Display_normal="2icon_03.png" Display_press="2icon_03.png" Background_normal="color@white" Background_press="color@#dddddd" NameCN="系统消息s" NameEN="Messages" Type="cmd"/>
+<Operation Index="1" Display_normal="2icon_05.png" Display_press="2icon_05.png" Background_normal="color@white" Background_press="color@#dddddd" NameCN="设备运维s" NameEN="Operation" Type="cmd"/>
+<Inventory Index="2" Display_normal="2icon_07.png" Display_press="2icon_07.png" Background_normal="color@white" Background_press="color@#dddddd" NameCN="设备盘点ss" NameEN="Inventory" Type="cmd"/>
+<Inspection Index="3" Display_normal="2icon_17.png" Display_press="2icon_17.png" Background_normal="color@white" Background_press="color@#dddddd" NameCN="设备巡检sss" NameEN="Inspection" Type="cmd"/>
+<Maintenance Index="4" Display_normal="2icon_19.png" Display_press="2icon_19.png" Background_normal="color@white" Background_press="color@#dddddd" NameCN="设备保养asdfa" NameEN="Maintenance" Type="cmd"/>
+<DeviceQuery Index="5" Display_normal="2icon_22.png" Display_press="2icon_22.png" Background_normal="color@white" Background_press="color@#dddddd" NameCN="设备查询asdfasdf" NameEN="DeviceQuery" Type="cmd"/>
+<Standardization Index="6" Display_normal="2icon_27.png" Display_press="2icon_27.png" Background_normal="color@white" Background_press="color@#dddddd" NameCN="标准化检查" NameEN="Standardization" Type="cmd"/>
+<Rectification Index="7" Display_normal="2icon_29.png" Display_press="2icon_29.png" Background_normal="color@white" Background_press="color@#dddddd" NameCN="检查整改" NameEN="DeviceReform" Type="dir">
+<RectificationTasks Index="0" Display_normal="zhenggairenwu.png" Display_press="zhenggairenwu.png" Background_normal="color@white" Background_press="color@#dddddd" NameCN="整改任务" NameEN="Tasks" Type="cmd"/>
+<RectificationConfirm Index="1" Display_normal="zhenggaiqueren.png" Display_press="zhenggaiqueren.png" Background_normal="color@white" Background_press="color@#dddddd" NameCN="整改确认" NameEN="Confirm" Type="cmd"/>
+</Rectification>
+<ComprehensiveBusiness Index="8" Display_normal="2icon_32.png" Display_press="2icon_32.png" Background_normal="color@white" Background_press="color@#dddddd" NameCN="综合业务" NameEN="ComprehensiveBusiness" Type="dir">
+<DeviceTaking Index="0" Display_normal="shebeilingyong.png" Display_press="shebeilingyong.png" Background_normal="" Background_press="" NameCN="设备领用" NameEN="DeviceTaking" Type="cmd"/>
+<DeviceAllot Index="1" Display_normal="shebeidiaobo.png" Display_press="shebeidiaobo.png" Background_normal="" Background_press="" NameCN="设备调拨" NameEN="DeviceAllot" Type="cmd"/>
+<RFIDAssociation Index="2" Display_normal="guanlianrfid.png" Display_press="guanlianrfid.png" Background_normal="" Background_press="" NameCN="关联RFID标签" NameEN="RFIDAssociation" Type="cmd"/>
+</ComprehensiveBusiness>
+<UserCard Index="9" Display_normal="2icon_41.png" Display_press="2icon_41.png" Background_normal="color@white" Background_press="color@#dddddd" NameCN="用户卡片" NameEN="UserCard" Type="cmd"/>
+<Settings Index="10" Display_normal="2icon_43.png" Display_press="2icon_43.png" Background_normal="color@white" Background_press="color@#dddddd" NameCN="系统设置" NameEN="Settings" Type="cmd"/>
+<LoginLogo Display_normal="2icon_43.png" NameCN="中国石化aasdfa" NameEN="CNPC" Visible="true" Type="static"/>
+<LoginTitle Display_normal="color@0x000000FF" NameCN="北京石油分公司asdfa" NameEN="SINOPEC Beijing Oil Products Company" Visible="true" Type="static"/>
+<LoginSubTitle Display_normal="color@0xCCCCCCFF" NameCN="智能设备巡检系统asdfa" NameEN="Smart Device Inspection System" Visible="true" Type="static"/>
+<LoginUserLeftIcon Display_normal="icon_05.png" NameCN="" NameEN="" Visible="true" Type="static"/>
+<LoginUserRightIcon Display_normal="icon_08.png" NameCN="" NameEN="" Visible="true" Type="static"/>
+<LoginPasswrdLeftIcon Display_normal="icon_13.png" NameCN="" NameEN="" Visible="true" Type="static"/>
+<LoginBtn Display_normal="color@red" Display_press="color@read" NameCN="登录" NameCN_press = "登录中..." NameEN="Login" NameEN_press = "Login..." Visible="true" Type="static" Name_color="color@white" Opacity_normal="0.5" Opacity_press = "1"/>
+<LogoutBtn Display_normal="color@red" Display_press="color@red" NameCN="退出账号" NameEN="Logout" Visible="true" Type="static" Name_color="color@white" Opacity_normal="1" Opacity_press = "0.5"/>
+<HomeLogo Display_normal="title_background.png" NameCN="智能巡检系统" NameEN="Smart Device Inspection System" Visible="true" Type="static"/>
+</sinopack>

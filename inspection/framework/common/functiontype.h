@@ -1,0 +1,31 @@
+#ifndef FUNCTIONTYPE
+#define FUNCTIONTYPE
+//业务操作类型
+#define  FUNCTION_TYPE_SYNC_ALL  "syncAll"
+#define  FUNCTION_TYPE_SYNC_STEP_BY_STEP   "sync_step"
+#define  FUNCTION_TYPE_SYNC_ADDTION   "syncAddtion"
+#define  FUNCTION_TYPE_REQUEST   "request"
+#define  FUNCTION_TYPE_SUBMIT   "submit"
+#define  FUNCTION_TYPE_SYNC   "sync"
+#define  FUNCTION_TYPE_REQUEST_TASK   "requestTask"
+#define  FUNCTION_TYPE_ADD_CACHE   "addCache"
+#define  FUNCTION_TYPE_SUBMIT_CACHE_ALL   "submitCacheAll"
+#define  FUNCTION_TYPE_CLEAR_CACHE_ALL   "clearCacheAll"
+#define  FUNCTION_TYPE_SUBMIT_CACHE   "submitCache"
+#define  FUNCTION_TYPE_CLEAR_CACHE   "clearCache"
+#define  FUNCTION_TYPE_HAS_CACHE   "hasCache"
+#define  FUNCTION_TYPE_HAS_TYPE_CACHE   "hasTypeCache"
+#define  FUNCTION_TYPE_OFF_LINE   "offline"
+#define  FUNCTION_TYPE_STATUS_ADDRESS   "address"
+#define  FUNCTION_TYPE_STATUS_LOGIN   "login"
+#define  FUNCTION_TYPE_STATUS_USERINFO   "userInfo"
+#define  FUNCTION_TYPE_STATUS_HISTORYUSER   "historyUser"
+#define  FUNCTION_TYPE_STATUS_PERMISSION   "permission"
+#define  FUNCTION_TYPE_STATUS_AUTHTYPE   "authType"
+#define  FUNCTION_TYPE_STATUS_ENCRYPTTYPE   "encryptType"
+#define  FUNCTION_TYPE_STATUS_OFFLINEMODE   "offlineMode"
+#define  FUNCTION_TYPE_STATUS_RESET_PARA_SERVICE   "resetParaService"
+#define  FUNCTION_TYPE_STATUS_RESET_PARA_PUSH   "resetParaPush"
+#define  FUNCTION_TYPE_CLEAR_DB   "clearDB"
+#endif // FUNCTIONTYPE
+

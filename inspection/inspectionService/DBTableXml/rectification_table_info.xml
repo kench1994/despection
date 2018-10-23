@@ -1,0 +1,61 @@
+<Tables name="Rectification">
+    <Table name="Exam_Examine_Rectify" description="Rectification Task">
+        <Field name="OrderID" type="char(36)" length="36" isKey="true" enableNull="false"/>
+        <Field name="OrderCode" type="varchar(50)" length="50" isKey="false" enableNull="true"/>
+        <Field name="OrderName" type="varchar(50)" length="50" isKey="false" enableNull="true"/>
+        <Field name="RectifyDescript" type="varchar(500)" length="500" isKey="false" enableNull="true"/>
+        <Field name="AuditDescript" type="varchar(500)" length="500" isKey="false" enableNull="true"/>
+        <Field name="StartTime" type="datetime" length="0" isKey="false" enableNull="true"/>
+        <Field name="EndTime" type="datetime" length="0" isKey="false" enableNull="true"/>
+        <Field name="ProcDescript" type="varchar(500)" length="500" isKey="false" enableNull="true"/>
+        <Field name="SerialKey" type="varchar(50)" length="50" isKey="false" enableNull="true"/>
+        <Field name="RectifyOrg" type="char(36)" length="36" isKey="false" enableNull="true"/>
+        <Field name="OrderUser" type="varchar(20)" length="20" isKey="false" enableNull="true"/>
+        <Field name="OrderUserName" type="varchar(20)" length="20" isKey="false" enableNull="true"/>
+        <Field name="OrderDate" type="datetime" length="0" isKey="false" enableNull="true"/>
+        <Field name="OrderAuditUser" type="varchar(20)" length ="20" isKey="false" enableNull="true" />
+        <Field name="OrderAuditDate" type="datetime" length="0" isKey="false" enableNull="true"/>
+        <Field name="ProcRecordUser" type="varchar(20)" length="20" isKey="false" enableNull="true"/>
+        <Field name="ProcRecordDate" type="datetime" length="0" isKey="false" enableNull="true"/>
+        <Field name="OrderCompany" type="char(36)" length="36" isKey="false" enableNull="true"/>
+        <Field name="OrderDepartment" type="char(36)" length="36" isKey="false" enableNull="true"/>
+        <Field name="RectifyStatus" type="int(11)" length ="11" isKey="false" enableNull="true" />
+        <Field name="DataSrcType" type="int(11)" length="11" isKey="false" enableNull="true"/>
+        <Field name="RectifyContent" type="text" length="0" isKey="false" enableNull="true"/>
+        <Field name="OrderCompanyName" type="char(36)" length="36" isKey="false" enableNull="true"/>
+        <Field name="OrderDepartmentName" type="char(36)" length="36" isKey="false" enableNull="true"/>
+        <Field name="SyncStatus" enableNull="true" isKey="false" length="11" type="int(11)"/>
+        <Field name="LocalStatus" type="int(2)" length="2" isKey="false" enableNull="true"/>
+    </Table>
+    <Table name="Exam_Examine_Rectify_User_Time" description="用户-业务-时间表">
+        <Field name="UserID" type="char(36)" length="36" isKey="false" enableNull="false"/>
+        <Field name="LastTime" type="datetime" length="0" isKey="false" enableNull="true"/>
+        <Field name="RectifyStatus" type="int(11)" length="11" isKey="false" enableNull="false"/>
+    </Table>
+    <Table name="Exam_Examine_Rectify_Task_Time" description="用户-任务-时间表">
+        <Field name="ID" type="char(36)" length="36" isKey="true" enableNull="false"/>
+        <Field name="UserID" type="char(36)" length="36" isKey="false" enableNull="false"/>
+        <Field name="OrderID" type="char(36)" length="36" isKey="false" enableNull="true"/>
+        <Field name="LastTime" type="datetime" length="0" isKey="false" enableNull="true"/>
+        <Field name="RectifyStatus" type="int (11)" length="11" isKey="false" enableNull="true"/>
+    </Table>
+    <Table name="Exam_Examine_Rectify_Submit" description="提交表">
+        <Field name="ID" type="char(36)" length="36" isKey="true" enableNull="false"/>
+        <Field name="Action" type="varchar(255)" length="255" isKey="false" enableNull="false"/>
+        <Field name="OfflineModel" type="char(36)" length="36" isKey="false" enableNull="false"/>
+        <Field name="OrderID" type="char(36)" length="36" isKey="false" enableNull="false"/>
+        <Field name="RectifyStatus" type="int (11)" length="11" isKey="false" enableNull="true"/>
+        <Field name="FilePath" type="varchar(255)" length="255" isKey="false" enableNull="false"/>
+    </Table>
+    <Table name="Exam_Examine_Rectify_Attachment_Submit" description="附件提交表">
+        <Field name="ID" type="char(36)" length="36" isKey="true" enableNull="false"/>
+        <Field name="Action" type="varchar(255)" length="255" isKey="false" enableNull="false"/>
+        <Field name="OfflineModel" type="char(36)" length="36" isKey="false" enableNull="false"/>
+        <Field name="Name" type="varchar(50)" length="50" isKey="false" enableNull="true"/>
+        <Field name="Mime" type="varchar(50)" length="50" isKey="false" enableNull="true"/>
+        <Field name="FilePath" type="varchar(255)" length="255" isKey="false" enableNull="true"/>
+        <Field name="SerialKey" type="varchar(50)" length="50" isKey="false" enableNull="true"/>
+        <Field name="Title" type="varchar(50)" length="50" isKey="false" enableNull="true"/>
+        <Field name="Description" type="varchar(256)" length="256" isKey="false" enableNull="true"/>
+    </Table>
+</Tables>
